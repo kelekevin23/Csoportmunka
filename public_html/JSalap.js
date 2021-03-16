@@ -2,7 +2,6 @@ var parosok= [];
 var tomb = [];
 var osszeg = 0;
 var feladat4db = 0;
-function feltolt() {
 var g =0;
 function feltolt() { 
 
