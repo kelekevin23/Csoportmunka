@@ -25,7 +25,7 @@ function feladat3(){
         visszafele += tomb[x-1]+",";
         x -= 1;
     }
-    document.getElementById("feladat3").innerHTML += "<br>" +visszafele;
+    
 }
 function feladat6(){
     feltolt();
@@ -46,26 +46,7 @@ function feladat9(){
         }
     }
 }
-function szerkezet() {
-    feltolt();
-    osszegzes();
-<<<<<<< HEAD
-    feladat3();
-=======
 
-    feladat4();
-<<<<<<< HEAD
-=======
-    document.getElementById("szamok").innerHTML += "<br>" + tomb + "<br>Az összeg: " + osszeg;
->>>>>>> aafee1953da589048ff3a79bacb3cbfea3f9be82
->>>>>>> 6c706316b3cc28ffd019ccd1078dcdae0f3c025e
-    
-
-    feladat2();
-    document.getElementById("szamok").innerHTML += "<br>" +tomb+ "<br>Az összeg: "+osszeg;
-    document.getElementById("parosok").innerHTML += "<br>" +parosok+ "<br>";
-
-}
 
 function feladat4(){
     feltolt();
@@ -82,6 +63,17 @@ function feladat7(){
         //itt tartok
     }
     
+}
+function szerkezet() {
+    feltolt();
+    osszegzes();
+    feladat3();
+    feladat4();
+	feladat2();
+    document.getElementById("szamok").innerHTML += "<br>" + tomb + "<br>Az összeg: " + osszeg;
+    document.getElementById("szamok").innerHTML += "<br>" +tomb+ "<br>Az összeg: "+osszeg;
+    document.getElementById("parosok").innerHTML += "<br>" +parosok+ "<br>";
+	document.getElementById("feladat3").innerHTML += "<br>" +visszafele;
 }
 function init() {
     console.log("Bejelentkeztem");
@@ -104,6 +96,7 @@ function feladat3(){
     feltolt();
     
 }
+
 window.addEventListener("load", init);
 
 //    var tomb= [3,14, 'macska', 56];
