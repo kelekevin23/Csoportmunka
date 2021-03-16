@@ -1,8 +1,13 @@
-
+var parosok= [];
 var tomb = [];
 var osszeg = 0;
+<<<<<<< Updated upstream
 var feladat4db = 0;
 function feltolt() {
+=======
+var g =0;
+function feltolt() { 
+>>>>>>> Stashed changes
     var ertek = document.getElementById("adat").value;
     for (var i = 0; i < ertek; i++) {
         tomb[i] = Math.floor(Math.random() * 10) + 1; //1-10 közötti számok    
@@ -18,9 +23,15 @@ function osszegzes() {
 function szerkezet() {
     feltolt();
     osszegzes();
+<<<<<<< Updated upstream
     feladat4();
     document.getElementById("szamok").innerHTML += "<br>" + tomb + "<br>Az összeg: " + osszeg;
     
+=======
+    feladat2();
+    document.getElementById("szamok").innerHTML += "<br>" +tomb+ "<br>Az összeg: "+osszeg;
+    document.getElementById("parosok").innerHTML += "<br>" +parosok+ "<br>";
+>>>>>>> Stashed changes
 }
 
 function feladat4(){
@@ -43,6 +54,22 @@ function init() {
     console.log("Bejelentkeztem");
     console.log(document.getElementById("adat").value);
     document.getElementById("gomb").addEventListener("click", szerkezet);
+}
+    function feladat2(){
+	feltolt();
+    for (var i = 0; i < tomb.length; i++) {
+        if(tomb[i]%2===0){
+          parosok[g]=tomb[i]; 
+          g++;
+        }
+        
+    }
+    
+	
+}
+function feladat3(){
+    feltolt();
+    
 }
 window.addEventListener("load", init);
 
