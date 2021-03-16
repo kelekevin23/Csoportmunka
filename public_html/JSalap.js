@@ -22,7 +22,6 @@ function szerkezet() {
     osszegzes();
 
     feladat4();
-    document.getElementById("szamok").innerHTML += "<br>" + tomb + "<br>Az összeg: " + osszeg;
     
 
     feladat2();
